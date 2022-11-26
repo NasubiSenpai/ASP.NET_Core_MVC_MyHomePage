@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ye1TvZS69fegCPrvPEBf+c7tZyOHg2icZbUsSmoc9ed4fWUxrSh1FIkPexFWXIRn7m6dapiq1T7Lz067tty+4w==",
+  "success": true,
+  "projectFilePath": "/home/takumi/devs/C#Projects/ASP.NET_Core_MVC/TestProject/TestProject.csproj",
+  "expectedPackageFiles": [
+    "/home/takumi/.nuget/packages/bootstrap/5.2.2/bootstrap.5.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}

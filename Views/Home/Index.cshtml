@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+    List<string> customerList = new List<string>();
+    customerList.Add("This is test page");
+    customerList.Add("My name is Taro");
+    customerList.Add("Please subscribe me!");
+    
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <ul>      
+        @foreach(string customer in customerList)
+        {
+            <li>@customer</li>
+        }
+    </ul>
+</div>
+

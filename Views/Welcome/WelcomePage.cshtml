@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = "Welcome Page";
+
+    string mes = "Thanks for visit my page!";
+    string mes2 = "Current...";
+    string nowDate = DateTime.Now.ToString();
+
+    List<string> strTestList = new List<string>();
+
+        for(int i = 0; i < 10; ++i)
+        {
+            strTestList.Add($"No.{i}");
+        }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Welcome!!</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/TestProject.styles.css" asp-append-version="true" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row row-cols-1">
+                <div class="col1 box">@mes</div>
+                <div class="col2 box">@mes2</div>
+                <div class="col3 box">@nowDate</div>
+            </div>
+            <div class="row row-cols-2">
+               
+                    @foreach(string tmp in strTestList)
+                    {
+                        <div class="col">@tmp</div>
+                    }
+                 
+            </div>
+        </div>
+    </body>
+</html>
