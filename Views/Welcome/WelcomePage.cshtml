@@ -11,6 +11,13 @@
         {
             strTestList.Add($"No.{i}");
         }
+
+    List<string> strList = new List<string>();
+
+        for(int j = 0; j < 100; ++j)
+        {
+            strList.Add($"roop{j}");
+        }
 }
 
 <!DOCTYPE html>
@@ -37,6 +44,14 @@
                         <div class="col">@tmp</div>
                     }
                  
+            </div>
+            <div class="row row-cols-3">
+                
+                @foreach(string strTmp in strList)
+                {
+                    <div class="col">@strTmp</div>
+                }
+
             </div>
         </div>
     </body>
